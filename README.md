@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛍️ FakeStore - Next.js + Zustand Product App
 
-## Getting Started
+A React (Next.js) application built using the **Fake Store API**, featuring authentication, product listing, detailed views, and update/delete functionality — all managed efficiently using **Zustand** and styled with **Tailwind CSS**.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🔐 **Login Page** – Mock authentication (`user/password`)  
+  Persists login using localStorage.
+- 🧾 **Product List** – Fetches data from [FakeStoreAPI](https://fakestoreapi.com/products)  
+  Displays image, title, price, and category in a responsive grid.
+- 🔍 **Product Detail** – View full description, rating, and category.  
+- ✏️ **Edit Product** – Update product title and price (PUT request).  
+- 🗑️ **Delete Product** – Confirm and delete product instantly from API + Zustand store.  
+- 💾 **Zustand Store** – Centralized caching for product list, update, and delete.  
+- 🎨 **Tailwind CSS** – Clean, modern, responsive UI.  
+- ⚡ **Optimized UX** – Loading spinners, error handling, and smooth transitions.
+
+---
+
+## 🧠 Tech Stack
+
+- **Next.js 14+**
+- **React 18+**
+- **Zustand** (state management)
+- **Axios** (API calls)
+- **Tailwind CSS**
+- **FakeStore API**
+
+---
+
+## 🛠️ Setup
 
 ```bash
+# Clone repo
+git clone https://github.com/<your-username>/fakestore-nextjs.git
+cd fakestore-nextjs
+
+# Install dependencies
+npm install
+
+# Run app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
