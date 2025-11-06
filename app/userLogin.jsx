@@ -56,7 +56,7 @@ export default function UserLogin() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="you@example.com"
-            className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-black focus:outline-none placeholder-gray-400"
+            className="text-black w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-black focus:outline-none placeholder-gray-400"
           />
         </div>
         <div className="mb-8">
@@ -72,7 +72,7 @@ export default function UserLogin() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2.5 pr-10 focus:ring-2 focus:ring-black focus:outline-none placeholder-gray-400"
+              className="text-black w-full border border-gray-300 rounded-lg px-4 py-2.5 pr-10 focus:ring-2 focus:ring-black focus:outline-none placeholder-gray-400"
             />
             <button
               type="button"
